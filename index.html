@@ -15,28 +15,6 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6; /* Fondo gris claro */
         }
-        /* Estilo para las tarjetas de proyecto */
-        .project-card {
-            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
-        }
-        .project-card-image {
-            @apply h-48 w-full object-cover;
-        }
-        .project-card-content {
-            @apply p-6;
-        }
-        .project-card-title {
-            @apply text-xl font-semibold text-gray-800 mb-2;
-        }
-        .project-card-description {
-            @apply text-gray-600 text-sm mb-4 h-20; /* Altura fija para alinear botones */
-        }
-        .project-card-button {
-            @apply inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors;
-        }
-        .project-card-button-disabled {
-            @apply inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed;
-        }
     </style>
 </head>
 <body class="text-gray-900">
@@ -70,58 +48,73 @@
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Proyecto 1: Asistente Lingüístico (ACTIVO) -->
-            <div class="project-card">
-                <img src="https://placehold.co/600x400/007BFF/FFFFFF?text=Asistente+Lingüístico" alt="Asistente Lingüístico" class="project-card-image">
-                <div class="project-card-content">
-                    <h3 class="project-card-title">Asistente Lingüístico</h3>
-                    <p class="project-card-description">Una herramienta de IA para generar ejemplos, antónimos, etimologías y traducciones de palabras o frases.</p>
-                    <!-- 
-                        Este enlace apuntará al subdirectorio.
-                        ¡IMPORTANTE! Necesitaremos mover el otro repositorio para que esto funcione.
-                        Por ahora, el enlace se prepara.
-                    -->
-                    <a href="/asistente-linguistico/" class="project-card-button">Abrir Aplicación</a>
+            <!-- 
+              Proyecto 1: Asistente Lingüístico (ACTIVO)
+              ¡CAMBIO! Color de imagen y botón a pastel.
+            -->
+            <div class="bg-white rounded-xl shadow-lg overflow-visible transition-transform duration-300 hover:scale-105 pt-20">
+                <div class="pb-6 px-6 text-center">
+                    
+                    <img src="https://placehold.co/400x400/bae6fd/0c4a6e?text=App" alt="Asistente Lingüístico" class="h-32 w-32 object-cover rounded-full mx-auto -mt-16 mb-4 border-4 border-white shadow-lg">
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Asistente Lingüístico</h3>
+                    <p class="text-gray-600 text-sm mb-4 h-20">Una herramienta de IA para generar ejemplos, antónimos, etimologías y traducciones de palabras o frases.</p>
+                    
+                    <!-- ¡CAMBIO! Botón a color 'sky' (cielo) pastel -->
+                    <a href="/asistente-linguistico/" class="inline-block bg-sky-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-sky-600 transition-colors">Abrir Aplicación</a>
                 </div>
             </div>
 
-            <!-- Proyecto 2: Próximamente -->
-            <div class="project-card">
-                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+2" alt="Proyecto 2" class="project-card-image">
-                <div class="project-card-content">
-                    <h3 class="project-card-title">Proyecto 2 (Próximamente)</h3>
-                    <p class="project-card-description">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
-                    <span class="project-card-button-disabled">Próximamente</span>
+            <!-- 
+              Proyecto 2: Próximamente
+              ¡CAMBIO! Color de imagen a pastel.
+            -->
+            <div class="bg-white rounded-xl shadow-lg overflow-visible transition-transform duration-300 hover:scale-105 pt-20">
+                <div class="pb-6 px-6 text-center">
+                    <img src="https://placehold.co/400x400/e5e7eb/6b7280?text=App" alt="Proyecto 2" class="h-32 w-32 object-cover rounded-full mx-auto -mt-16 mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyecto 2 (Próximamente)</h3>
+                    <p class="text-gray-600 text-sm mb-4 h-20">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
+                    <span class="inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed">Próximamente</span>
                 </div>
             </div>
 
-            <!-- Proyecto 3: Próximamente -->
-            <div class="project-card">
-                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+3" alt="Proyecto 3" class="project-card-image">
-                <div class="project-card-content">
-                    <h3 class="project-card-title">Proyecto 3 (Próximamente)</h3>
-                    <p class="project-card-description">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
-                    <span class="project-card-button-disabled">Próximamente</span>
+            <!-- 
+              Proyecto 3: Próximamente
+              ¡CAMBIO! Color de imagen a pastel.
+            -->
+            <div class="bg-white rounded-xl shadow-lg overflow-visible transition-transform duration-300 hover:scale-105 pt-20">
+                <div class="pb-6 px-6 text-center">
+                    <img src="https://placehold.co/400x400/a7f3d0/064e3b?text=App" alt="Proyecto 3" class="h-32 w-32 object-cover rounded-full mx-auto -mt-16 mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyecto 3 (Próximamente)</h3>
+                    <p class="text-gray-600 text-sm mb-4 h-20">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
+                    <span class="inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed">Próximamente</span>
                 </div>
             </div>
 
-            <!-- Proyecto 4: Próximamente -->
-            <div class="project-card">
-                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+4" alt="Proyecto 4" class="project-card-image">
-                <div class="project-card-content">
-                    <h3 class="project-card-title">Proyecto 4 (Próximamente)</h3>
-                    <p class="project-card-description">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
-                    <span class="project-card-button-disabled">Próximamente</span>
+            <!-- 
+              Proyecto 4: Próximamente
+              ¡CAMBIO! Color de imagen a pastel.
+            -->
+            <div class="bg-white rounded-xl shadow-lg overflow-visible transition-transform duration-300 hover:scale-105 pt-20">
+                <div class="pb-6 px-6 text-center">
+                    <img src="https://placehold.co/400x400/fef08a/713f12?text=App" alt="Proyecto 4" class="h-32 w-32 object-cover rounded-full mx-auto -mt-16 mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyecto 4 (Próximamente)</h3>
+                    <p class="text-gray-600 text-sm mb-4 h-20">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
+
+                    <span class="inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed">Próximamente</span>
                 </div>
             </div>
 
-            <!-- Proyecto 5: Próximamente -->
-            <div class="project-card">
-                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+5" alt="Proyecto 5" class="project-card-image">
-                <div class="project-card-content">
-                    <h3 class="project-card-title">Proyecto 5 (Próximamente)</h3>
-                    <p class="project-card-description">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
-                    <span class="project-card-button-disabled">Próximamente</span>
+            <!-- 
+              Proyecto 5: Próximamente
+              ¡CAMBIO! Color de imagen a pastel.
+            -->
+            <div class="bg-white rounded-xl shadow-lg overflow-visible transition-transform duration-300 hover:scale-105 pt-20">
+                <div class="pb-6 px-6 text-center">
+                    <img src="https://placehold.co/400x400/d8b4fe/581c87?text=App" alt="Proyecto 5" class="h-32 w-32 object-cover rounded-full mx-auto -mt-16 mb-4 border-4 border-white shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Proyecto 5 (Próximamente)</h3>
+                    <p class="text-gray-600 text-sm mb-4 h-20">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
+                    <span class="inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed">Próximamente</span>
                 </div>
             </div>
 
