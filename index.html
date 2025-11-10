@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Gonzales - Portafolio de Proyectos</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Fondo gris claro */
+        }
+        /* Estilo para las tarjetas de proyecto */
+        .project-card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+        }
+        .project-card-image {
+            @apply h-48 w-full object-cover;
+        }
+        .project-card-content {
+            @apply p-6;
+        }
+        .project-card-title {
+            @apply text-xl font-semibold text-gray-800 mb-2;
+        }
+        .project-card-description {
+            @apply text-gray-600 text-sm mb-4 h-20; /* Altura fija para alinear botones */
+        }
+        .project-card-button {
+            @apply inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+        }
+        .project-card-button-disabled {
+            @apply inline-block bg-gray-400 text-white font-semibold px-5 py-2 rounded-lg cursor-not-allowed;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- Encabezado -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Francisco Gonzales
+            </div>
+            <div class="text-gray-600">
+                <a href="mailto:informesrd@gmail.com" class="hover:text-blue-600 transition-colors" title="Enviar correo">
+                    <i class="fas fa-envelope text-xl"></i>
+                    <span class="ml-2 hidden sm:inline">informesrd@gmail.com</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Héroe -->
+    <section class="bg-gray-800 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Portafolio de Aplicaciones</h1>
+            <p class="text-lg text-gray-300">Bienvenido a mi colección de proyectos y aplicaciones web.</p>
+        </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <main class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Mis Proyectos</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Proyecto 1: Asistente Lingüístico (ACTIVO) -->
+            <div class="project-card">
+                <img src="https://placehold.co/600x400/007BFF/FFFFFF?text=Asistente+Lingüístico" alt="Asistente Lingüístico" class="project-card-image">
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Asistente Lingüístico</h3>
+                    <p class="project-card-description">Una herramienta de IA para generar ejemplos, antónimos, etimologías y traducciones de palabras o frases.</p>
+                    <!-- 
+                        Este enlace apuntará al subdirectorio.
+                        ¡IMPORTANTE! Necesitaremos mover el otro repositorio para que esto funcione.
+                        Por ahora, el enlace se prepara.
+                    -->
+                    <a href="/asistente-linguistico/" class="project-card-button">Abrir Aplicación</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Próximamente -->
+            <div class="project-card">
+                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+2" alt="Proyecto 2" class="project-card-image">
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Proyecto 2 (Próximamente)</h3>
+                    <p class="project-card-description">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
+                    <span class="project-card-button-disabled">Próximamente</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Próximamente -->
+            <div class="project-card">
+                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+3" alt="Proyecto 3" class="project-card-image">
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Proyecto 3 (Próximamente)</h3>
+                    <p class="project-card-description">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
+                    <span class="project-card-button-disabled">Próximamente</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Próximamente -->
+            <div class="project-card">
+                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+4" alt="Proyecto 4" class="project-card-image">
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Proyecto 4 (Próximamente)</h3>
+                    <p class="project-card-description">Espacio reservado para una futura aplicación. Vuelve a visitar pronto para ver el lanzamiento.</p>
+                    <span class="project-card-button-disabled">Próximamente</span>
+                </div>
+            </div>
+
+            <!-- Proyecto 5: Próximamente -->
+            <div class="project-card">
+                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Proyecto+5" alt="Proyecto 5" class="project-card-image">
+                <div class="project-card-content">
+                    <h3 class="project-card-title">Proyecto 5 (Próximamente)</h3>
+                    <p class="project-card-description">Ideas en desarrollo. Este espacio está reservado para el próximo gran proyecto.</p>
+                    <span class="project-card-button-disabled">Próximamente</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Francisco Gonzales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
